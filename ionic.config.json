@@ -1,0 +1,7 @@
+{
+  "name": "ShipMate",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
