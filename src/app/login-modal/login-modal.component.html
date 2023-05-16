@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Iniciar sesión</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="dismissModal()">Cancelar</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label position="stacked">Correo electrónico</ion-label>
+            <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">Contraseña</ion-label>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+    </ion-list>
+    <ion-button expand="block" (click)="login()">Iniciar sesión</ion-button>
+</ion-content>
